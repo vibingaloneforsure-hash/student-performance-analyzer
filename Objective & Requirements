@@ -1,0 +1,100 @@
+Objectives & Requirements
+
+Project Title
+
+Student Performance Analyzer
+
+Objective
+
+To develop a Python-based program that stores and analyzes student academic performance using marks from three subjects: M1, M2, and M3.
+
+Objectives
+
+• Add student records.
+• Calculate total marks.
+• Calculate average marks.
+• Assign grades automatically.
+• Determine PASS or FAIL.
+• Display all student records.
+• Find the topper.
+• Search for a student by name.
+• Calculate class statistics.
+• Calculate pass percentage.
+• Provide a simple menu-driven interface.
+
+Functional Requirements
+
+1. Add Student
+
+The user enters:
+
+• Student name
+• M1 marks
+• M2 marks
+• M3 marks
+
+The program calculates and stores the student’s total, average, grade, and result.
+
+2. Grade System
+
+Average    Grade
+
+90 or above A+   
+80–89.99   A    
+70–79.99   B    
+60–69.99   C
+50–59.99   D
+Below 50   F    
+
+3. Pass/Fail Rule
+
+A student is marked PASS only if M1, M2, and M3 are all at least 40 marks.
+
+Otherwise, the student is marked FAIL.
+
+4. Display Students
+
+The program displays:
+
+• Name
+• M1
+• M2
+• M3
+• Total
+• Average
+• Grade
+• Result
+
+5. Find Topper
+
+The program finds the student with the highest average marks.
+
+6. Search Student
+
+The program allows the user to search for a student by name.
+
+7. Class Statistics
+
+The program calculates:
+
+• Total students
+• Passed students
+• Failed students
+• Class average
+• Pass percentage
+
+8. Exit
+
+The user can exit the program using the Exit option.
+
+Technical Requirements
+
+• Language: Python
+• Data structures: List and Dictionary
+• Programming concepts: Functions, loops, conditions, input/output
+• Interface: Command-line menu
+• No external libraries are required.
+
+Expected Outcome
+
+The program should provide a simple way to enter, store, and analyze student academic performance. way to analyze student academic performance through a command-line interface.
