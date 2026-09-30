@@ -1,0 +1,38 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from main import calculate_result
+
+
+def test_pass_student():
+    total, average, grade, result = calculate_result(80, 90, 70)
+
+    assert total == 240
+    assert average == 80
+    assert grade == "A"
+    assert result == "PASS"
+
+
+def test_fail_student():
+    total, average, grade, result = calculate_result(80, 30, 90)
+
+    assert total == 200
+    assert average == 200 / 3
+    assert grade == "B"
+    assert result == "FAIL"
+
+
+def test_a_plus_grade():
+    total, average, grade, result = calculate_result(95, 92, 93)
+
+    assert grade == "A+"
+    assert result == "PASS"
+
+
+def test_f_grade():
+    total, average, grade, result = calculate_result(30, 35, 20)
+
+    assert grade == "F"
+    assert result == "FAIL"
